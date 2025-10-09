@@ -10,9 +10,11 @@ const app = express();
 
 const server = require("http").createServer(app);
 
+const base_url_fe = process.env.BASE_URL_FE
+
 const io = new Server(server, {
     cors: {
-        origin: "https://trello-test-1.netlify.app", // https://trello-test-1.netlify.app
+        origin: base_url_fe,
         methods: ["GET", "POST"],
     },
 });
