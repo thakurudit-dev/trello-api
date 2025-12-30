@@ -20,10 +20,6 @@ const io = new Server(server, {
 });
 
 console.log("check git user")
-console.log("check git user 2")
-console.log("check git user 3")
-console.log("check git user 4")
-console.log("check git user 5")
 
 io.on("connection", (socket) => {
     console.log(`+++++ User Connected : +++++ ${socket.id}`);
