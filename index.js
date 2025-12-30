@@ -20,6 +20,7 @@ const io = new Server(server, {
 });
 
 console.log("check git user")
+console.log("check git user 2")
 console.log("new branch 1")
 
 io.on("connection", (socket) => {
